@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LandingScreen extends StatelessWidget {
@@ -11,7 +12,7 @@ class LandingScreen extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40),
+            padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -36,9 +37,12 @@ class LandingScreen extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   child: FilledButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.go('/home');
+                    },
                     iconAlignment: IconAlignment.end,
                     icon: Icon(
+                      size: 16,
                       Icons.arrow_forward,
                       color: Color(0xFF29333E),
                     ),

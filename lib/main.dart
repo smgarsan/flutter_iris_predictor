@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_iris_predictor/screens/landing_screen.dart';
+import 'package:flutter_iris_predictor/config/app_router.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,7 +10,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false, home: const LandingScreen());
+    return MaterialApp.router(
+        routerConfig: router, debugShowCheckedModeBanner: false);
   }
 }
