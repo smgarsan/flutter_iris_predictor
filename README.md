@@ -1,4 +1,3 @@
-# flutter_iris_predictor
+# Iris Predictor
 
-A new Flutter project.
-# flutter_iris_predictor
+Una app creada con Flutter que consume un modelo de ML expuesto con una API de Flask
