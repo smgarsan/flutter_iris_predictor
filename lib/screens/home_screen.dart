@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               ),
               CustomButton(
                   text: 'Predecir',
-                  onPressed: (){context.go('/prediction');}
+                  onPressed: (){context.push('/prediction');}
                 )
             ],
           ),
