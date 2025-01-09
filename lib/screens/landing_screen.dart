@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_iris_predictor/widgets/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -34,30 +35,9 @@ class LandingScreen extends StatelessWidget {
                   'assets/images/intro.png',
                   height: 300,
                 ),
-                SizedBox(
-                  width: double.infinity,
-                  child: FilledButton.icon(
-                    onPressed: () {
-                      context.go('/home');
-                    },
-                    iconAlignment: IconAlignment.end,
-                    icon: Icon(
-                      size: 16,
-                      Icons.arrow_forward,
-                      color: Color(0xFF29333E),
-                    ),
-                    label: Text(
-                      'Comenzar',
-                      style: GoogleFonts.poppins(
-                          color: Color(0xFF29333E),
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    style: FilledButton.styleFrom(
-                        overlayColor: Colors.transparent,
-                        backgroundColor: Color(0xFFDABBFA),
-                        padding: EdgeInsets.symmetric(vertical: 15)),
-                  ),
+                CustomButton(
+                  text: 'Comenzar',
+                  onPressed: (){context.go('/home');}
                 )
               ],
             ),
