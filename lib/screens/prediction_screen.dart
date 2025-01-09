@@ -41,14 +41,14 @@ class PredictionScreen extends StatelessWidget {
                         children: [
                           Text('Tu predicción:',
                               style: GoogleFonts.poppins(
-                                  fontSize: 20, fontWeight: FontWeight.w500)),
+                                  fontSize: 20, fontWeight: FontWeight.bold)),
                           Text('Iris Versicolor',
                               style: GoogleFonts.poppins(fontSize: 16)),
                         ],
                       ),
                       Image.asset(
                         'assets/images/prediction.png',
-                        height: 100,
+                        height: 80,
                       ),
                     ],
                   ),
