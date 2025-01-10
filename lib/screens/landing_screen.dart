@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_iris_predictor/widgets/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -56,7 +57,7 @@ class LandingScreen extends StatelessWidget {
                     style: FilledButton.styleFrom(
                         overlayColor: Colors.transparent,
                         backgroundColor: Color(0xFFDABBFA),
-                        padding: EdgeInsets.symmetric(vertical: 16)),
+                        padding: EdgeInsets.symmetric(vertical: 15)),
                   ),
                 )
               ],
