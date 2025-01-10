@@ -56,7 +56,7 @@ class LandingScreen extends StatelessWidget {
                     style: FilledButton.styleFrom(
                         overlayColor: Colors.transparent,
                         backgroundColor: Color(0xFFDABBFA),
-                        padding: EdgeInsets.symmetric(vertical: 15)),
+                        padding: EdgeInsets.symmetric(vertical: 16)),
                   ),
                 )
               ],
